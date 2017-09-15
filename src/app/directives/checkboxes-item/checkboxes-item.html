@@ -5,7 +5,7 @@
   </md-input-container>
 
   <md-switch ng-model="Checkboxes.item.config.direction" ng-true-value="'horizontal'" ng-false-value="'vertical'">
-    Layout direction ({{Checkboxes.item.config.direction == 'horizontal' ? 'Horizontal' : 'Vertical'}})
+    Layout direction ({{Checkboxes.item.config.direction == 'horizontal' ? 'Vertical' : 'Horizontal'}})
   </md-switch>
 
   <div class="option-item" layout="row" ng-repeat="option in Checkboxes.item.options track by $index" sv-element>
