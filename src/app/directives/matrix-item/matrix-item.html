@@ -2,7 +2,7 @@
   <div class="option-item" layout="row" ng-repeat="column in Matrix.item.config.columns track by $index" sv-element>
 
     <md-button class="md-button handle" md-no-ink aria-label="reorder option item" sv-handle>
-      <i class="material-icons">reorder</i>
+      <md-icon md-font-set="material-icons"> reorder </md-icon>
     </md-button>
 
     <md-input-container class="input-container">
@@ -11,7 +11,7 @@
     </md-input-container>
 
     <md-button class="md-button" md-no-ink aria-label="delete column item" ng-click="Matrix.deleteColumn($index)">
-      <i class="material-icons">delete</i>
+      <md-icon md-font-set="material-icons"> delete </md-icon>
       <md-tooltip md-autohide="true">Delete</md-tooltip>
     </md-button>
 
@@ -26,7 +26,7 @@
   <div class="option-item" layout="row" ng-repeat="row in Matrix.item.config.rows track by $index" sv-element>
 
     <md-button class="md-button handle" md-no-ink aria-label="reorder row item" sv-handle>
-      <i class="material-icons">reorder</i>
+      <md-icon md-font-set="material-icons"> reorder </md-icon>
     </md-button>
 
     <md-input-container class="input-container">
@@ -35,7 +35,7 @@
     </md-input-container>
 
     <md-button class="md-button" md-no-ink aria-label="delete row item" ng-click="Matrix.deleteRow($index)">
-      <i class="material-icons">delete</i>
+      <md-icon md-font-set="material-icons"> delete </md-icon>
       <md-tooltip md-autohide="true">Delete</md-tooltip>
     </md-button>
 
