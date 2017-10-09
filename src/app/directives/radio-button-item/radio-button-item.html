@@ -6,8 +6,8 @@
 
   <div class="option-item" layout="row" ng-repeat="option in RadioButton.item.options track by $index" sv-element>
 
-    <md-button class="md-button handle" md-no-ink aria-label="reorder option item" sv-handle>
-      <md-icon md-font-icon="icon-reorder"> reorder </md-icon>
+    <md-button class="md-button handle" md-no-ink aria-label="option item" sv-handle>
+      <md-icon md-font-icon="icon-drag-horizontal"></md-icon>
     </md-button>
 
     <md-input-container class="md-block">
@@ -16,10 +16,12 @@
     </md-input-container>
 
     <md-button class="md-button md-warn" ng-click="RadioButton.deleteOption($index)">
-      <md-icon md-font-icon="icon-delete"> delete </md-icon>
+      <md-icon md-font-icon="icon-delete"></md-icon>
     </md-button>
 
   </div>
 
-  <md-button class="md-raised md-accent" ng-click="RadioButton.addOption()"> Add Option </md-button>
+  <md-button class="md-raised md-accent" ng-click="RadioButton.addOption()">
+    <md-icon md-font-icon="icon-plus"></md-icon>
+  </md-button>
 </div>
