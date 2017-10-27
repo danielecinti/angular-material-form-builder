@@ -5,6 +5,7 @@
         <div class="formItem-title">{{formItem.props.title}}</div>
         <div class="formItem-help-text">{{formItem.props.helpText}}</div>
 
+        <agreement-view form-item="formItem" is-preview="true" form="formItemForm" ng-switch-when="agreement"></agreement-view>
         <checkboxes-view form-item="formItem" is-preview="true" form="formItemForm" ng-switch-when="checkboxes"></checkboxes-view>
         <radio-button-view form-item="formItem" is-preview="true" form="formItemForm" ng-switch-when="multipleChoices"></radio-button-view>
         <input-view form-item="formItem" form="formItemForm" ng-switch-when="input"></input-view>

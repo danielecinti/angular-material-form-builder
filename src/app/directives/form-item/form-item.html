@@ -22,6 +22,11 @@
     <input ng-model="FormItem.item.props.helpText" />
   </md-input-container>
 
+  <md-input-container ng-if="FormItem.item.type === 'agreement'" class="md-block">
+    <label>Option Text</label>
+    <input ng-model="FormItem.item.props.optionText" />
+  </md-input-container>
+
   <div ng-switch="FormItem.item.type">
     <agreement-item ng-switch-when="agreement" item="FormItem.item"></agreement-item>
     <label-item ng-switch-when="label" item="FormItem.item"></label-item>
@@ -34,7 +39,7 @@
     <p ng-switch-default>UNKNOWN TYPE</p>
   </div>
 
-  <md-input-container ng-if="FormItem.item.type != 'label'" class="md-block">
+  <md-input-container ng-if="FormItem.item.type != 'label' && FormItem.item.type != 'agreement'" class="md-block">
     <md-checkbox ng-model="FormItem.item.config.required">Required field</md-checkbox>
   </md-input-container>
 

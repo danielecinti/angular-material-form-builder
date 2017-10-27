@@ -13,7 +13,7 @@
       },
       controller: AgreementItemCtrl,
       controllerAs: 'Agreement',
-      // bindToController: true
+      bindToController: true
     };
 
     return directive;
@@ -23,16 +23,15 @@
   function AgreementItemCtrl(Utils, $element) {
     this.Element = $element;
 
-    this.item = {
+    Utils.extend(this.item || {}, {
       config: {
-        maxSelections: 1,
-        required: true
+        maxSelections: null
       },
       options: [{
         value: '',
         selected: false
       }]
-    };
+    });
   }
 
 })(angular);
