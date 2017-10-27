@@ -23,6 +23,7 @@
   </md-input-container>
 
   <div ng-switch="FormItem.item.type">
+    <agreement-item ng-switch-when="agreement" item="FormItem.item"></agreement-item>
     <label-item ng-switch-when="label" item="FormItem.item"></label-item>
     <input-item ng-switch-when="input" item="FormItem.item"></input-item>
     <radio-button-item ng-switch-when="multipleChoices" item="FormItem.item"></radio-button-item>

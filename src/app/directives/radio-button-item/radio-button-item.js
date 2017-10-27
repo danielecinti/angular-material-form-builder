@@ -22,7 +22,8 @@
   /*@ngInject*/
   function RadioButtonCtrl(Utils, $element) {
     this.Element = $element;
-    Utils.extend(this.item, {
+
+    Utils.extend(this.item || {}, {
       config: {},
       options: [{
         value: ''
