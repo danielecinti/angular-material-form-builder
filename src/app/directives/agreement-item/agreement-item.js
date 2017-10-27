@@ -7,7 +7,7 @@
   function AgreementItem() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/directives/agreement-item/agreement-item.html',
+      // templateUrl: 'app/directives/agreement-item/agreement-item.html',
       scope: {
         item: '='
       },

@@ -40,7 +40,10 @@
   AgreementViewCtrl.prototype.init = function () {
     this.Utils.extend(this.formItem, {
       config: {},
-      options: []
+      options: [{
+        value: '',
+        selected: false
+      }]
     });
 
     this.selectedOptions = this._getSelectedOptions();

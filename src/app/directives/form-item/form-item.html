@@ -24,7 +24,7 @@
 
   <md-input-container ng-if="FormItem.item.type === 'agreement'" class="md-block">
     <label>Option Text</label>
-    <input ng-model="FormItem.item.props.optionText" />
+    <input ng-model="FormItem.item.options[0].value" />
   </md-input-container>
 
   <div ng-switch="FormItem.item.type">
