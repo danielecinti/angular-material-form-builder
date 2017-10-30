@@ -39,7 +39,7 @@
     <p ng-switch-default>UNKNOWN TYPE</p>
   </div>
 
-  <md-input-container ng-if="FormItem.item.type != 'label' && FormItem.item.type != 'agreement'" class="md-block">
+  <md-input-container ng-if="FormItem.item.type != 'label'" class="md-block">
     <md-checkbox ng-model="FormItem.item.config.required">Required field</md-checkbox>
   </md-input-container>
 
